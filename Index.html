@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Reservación de Tours Turísticos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+
+        <h1>Sistema de Reservación de Tours Turísticos</h1>
+
+        <p>
+            Reserva tu próximo viaje de manera fácil y rápida
+        </p>
+
+    </header>
+
+
+    <!-- MENÚ -->
+    <nav>
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#problema">Problema</a>
+
+        <a href="#solucion">Solución</a>
+
+        <a href="#tours">Tours</a>
+
+        <a href="#reservacion">Reservación</a>
+
+        <a href="#contacto">Contacto</a>
+
+    </nav>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+
+        <!-- INICIO -->
+        <section id="inicio">
+
+            <h2>Bienvenido</h2>
+
+            <p>
+                Este sitio web permite consultar diferentes tours
+                turísticos y realizar una reservación de forma sencilla.
+            </p>
+
+            <p>
+                El objetivo es facilitar a los turistas la elección
+                de un tour y conocer el costo de su reservación.
+            </p>
+
+        </section>
+
+
+
+        <!-- PROBLEMA -->
+        <section id="problema">
+
+            <h2>Problema</h2>
+
+            <p>
+                Algunas personas tienen dificultades para encontrar
+                información sobre tours turísticos y conocer rápidamente
+                cuánto pagarían por su viaje.
+            </p>
+
+            <p>
+                También puede ser complicado organizar los datos de una
+                reservación cuando se realiza de manera manual.
+            </p>
+
+        </section>
+
+
+
+        <!-- SOLUCIÓN -->
+        <section id="solucion">
+
+            <h2>Solución tecnológica</h2>
+
+            <p>
+                Se propone un sistema web sencillo para consultar tours
+                y realizar una reservación.
+            </p>
+
+            <p>
+                El sistema permite seleccionar un destino, indicar el
+                número de personas y calcular automáticamente el precio
+                total.
+            </p>
+
+            <div class="contenedor">
+
+                <div class="tarjeta">
+
+                    <h3>Información</h3>
+
+                    <p>
+                        El usuario puede consultar los tours disponibles.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>Reservación</h3>
+
+                    <p>
+                        El usuario puede llenar un formulario para reservar.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>Cálculo</h3>
+
+                    <p>
+                        JavaScript calcula el costo total de la reservación.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- TOURS -->
+        <section id="tours">
+
+            <h2>Tours disponibles</h2>
+
+
+            <div class="contenedor">
+
+
+                <div class="tour">
+
+                    <h3>Valle de Bravo</h3>
+
+                    <p>
+                        Disfruta de paisajes, naturaleza y actividades
+                        turísticas.
+                    </p>
+
+                    <p class="precio">
+                        $800 por persona
+                    </p>
+
+                </div>
+
+
+
+                <div class="tour">
+
+                    <h3>Peña de Bernal</h3>
+
+                    <p>
+                        Conoce este Pueblo Mágico y sus principales
+                        atractivos turísticos.
+                    </p>
+
+                    <p class="precio">
+                        $900 por persona
+                    </p>
+
+                </div>
+
+
+
+                <div class="tour">
+
+                    <h3>Huasca de Ocampo</h3>
+
+                    <p>
+                        Conoce sus paisajes, cultura y lugares turísticos.
+                    </p>
+
+                    <p class="precio">
+                        $850 por persona
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RESERVACIÓN -->
+        <section id="reservacion">
+
+            <h2>Realizar reservación</h2>
+
+            <p>
+                Completa los siguientes datos:
+            </p>
+
+
+            <form id="formulario">
+
+
+                <label for="nombre">
+                    Nombre completo:
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Escribe tu nombre"
+                >
+
+
+
+                <label for="correo">
+                    Correo electrónico:
+                </label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    placeholder="ejemplo@gmail.com"
+                >
+
+
+
+                <label for="tour">
+                    Selecciona un tour:
+                </label>
+
+                <select id="tour">
+
+                    <option value="">
+                        Selecciona un tour
+                    </option>
+
+                    <option value="800">
+                        Valle de Bravo - $800
+                    </option>
+
+                    <option value="900">
+                        Peña de Bernal - $900
+                    </option>
+
+                    <option value="850">
+                        Huasca de Ocampo - $850
+                    </option>
+
+                </select>
+
+
+
+                <label for="personas">
+                    Número de personas:
+                </label>
+
+                <input
+                    type="number"
+                    id="personas"
+                    min="1"
+                    placeholder="Ejemplo: 2"
+                >
+
+
+
+                <label for="fecha">
+                    Fecha del tour:
+                </label>
+
+                <input
+                    type="date"
+                    id="fecha"
+                >
+
+
+
+                <button type="submit">
+                    Realizar reservación
+                </button>
+
+
+            </form>
+
+
+            <!-- AQUÍ APARECE EL RESULTADO -->
+
+            <div id="resultado"></div>
+
+        </section>
+
+
+
+        <!-- USUARIOS -->
+        <section id="usuarios">
+
+            <h2>Usuarios</h2>
+
+            <p>
+                Este sistema está dirigido principalmente a:
+            </p>
+
+            <ul>
+
+                <li>Turistas.</li>
+
+                <li>Familias.</li>
+
+                <li>Estudiantes.</li>
+
+                <li>Personas que desean conocer nuevos destinos.</li>
+
+                <li>Personas que buscan organizar un tour.</li>
+
+            </ul>
+
+        </section>
+
+
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+
+            <h2>Contacto</h2>
+
+            <p>
+                Correo: reservaciones@tours.com
+            </p>
+
+            <p>
+                Teléfono: 55 1234 5678
+            </p>
+
+            <p>
+                Horario: Lunes a viernes de 9:00 a 18:00 horas.
+            </p>
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>
+            Sistema de Reservación de Tours Turísticos
+        </p>
+
+        <p>
+            Proyecto de Innovación y Tecnologías de la Información
+        </p>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
